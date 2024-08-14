@@ -1,5 +1,5 @@
 server:
-  port: 9033
+  port: 9001
   tomcat:
     connection-timeout: 2s
     keep-alive-timeout: 15s
@@ -32,9 +32,6 @@ spring:
     hikari:
       connection-timeout: 2000
       maximum-pool-size: 5
-  sql:
-    init:
-      mode: always
 
 management:
   endpoints:
