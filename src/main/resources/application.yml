@@ -8,7 +8,7 @@ spring:
       uri: http://localhost:8888
       request-connect-timeout: 5000
       request-read-timeout: 5000
-      fail-fast: false
+      fail-fast: true
       retry:
         max-attempts: 6
         initial-interval: 1000
@@ -23,6 +23,7 @@ spring:
       maximum-pool-size: 5
 server:
   port: 9001
+  shutdown: graceful
   tomcat:
     connection-timeout: 2s
     keep-alive-timeout: 15s
